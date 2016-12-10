@@ -1,0 +1,10 @@
+A short write-up of anything you learned along the way & anything you’d like to call
+out (not more than 1 page).
+
+
+During developing this project there are a few things I learned. I learned how to use the frameworks gulp & angularJS. 
+Gulp is a great tool to help speed up development by pre-processing sass files and also minimizing JS files automatically.
+Angular JS is a great front end framework that is easy to pick up and the use of contollers makes dynamically changing the HTML very easy. 
+
+In order to make things easier, I put all the individual controllers in one file. however, ideally I would have each controller inside it's own file, much like I did with each tabs html page.
+One other change I would make is to create a minimized js file so that there are less server calls to grab files.

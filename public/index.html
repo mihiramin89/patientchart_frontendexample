@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="patientChart">
+
+<head>
+    <title>Patient Chart</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="./scripts/fusioncharts.js"></script>
+    <script src="./scripts/fusioncharts.charts.js"></script>
+    <script src="./scripts/fusioncharts.maps.js"></script>
+    <script src="./scripts/fusioncharts.usa.js"></script>
+    <script src="./scripts/fusioncharts.theme.fint.js"></script>
+    <script src="./scripts/angular-fusioncharts.min.js"></script>
+    <script src="./scripts/tabcontroller.js"></script>
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <div class='banner'>
+        <div class='toolbar'>
+            <input type='text' placeholder='Search for anything' />
+            <span class="glyphicon glyphicon-search"></span>
+            <ul>
+                <li><span class="glyphicon glyphicon-th"></span></li>
+                <li><span class="glyphicon glyphicon-bell"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sideSection">
+        <div class="section">
+            <div class="card">
+                <h2>Cardiology and <br /> Cardiac Surgery</h2>
+                <h5>Oxford General Medical Center</h5>
+                <ul>
+                    <li>Add to Watch List <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+                    <li>Share Profile</li>
+                </ul>
+                <ul class="info">
+                    <li>
+                        <div><span>14k</span><br /> Visits</div>
+                    </li>
+                    <li>
+                        <div><span>75k</span><br /> Physicians</div>
+                    </li>
+                    <li>
+                        <div><span>10k</span><br /> Complaints</div>
+                    </li>
+                    <li>
+                        <div><span>11k</span><br /> Diagnosis</div>
+                    </li>
+                </ul>
+                <div id="sideMap">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDZtP0G4rv9ycMUiqTga9cDHt7LbxfjrY&callback=initMap" async defer></script>
+                    </script>
+                </div>
+                <ul>
+                    <li><span class="glyphicon glyphicon-map-marker"></span>Go to Map</li>
+                    <li><span class="glyphicon glyphicon-share-alt	Try it
+"></span>Go to Constellation</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class='tabs' ng-controller="TabController">
+        <ul class="unstyled nav nav-tabs">
+            <li ng-repeat="tab in tabs" ng-class="{active: isSelected($index)}">
+                <a data-toggle="tab" ng-click="selectTab($index)">
+                    {{tab.text}}
+                </a>
+            </li>
+            <li id="more"><a data=toggle="tab"> More </a> </li>
+        </ul>
+
+        <div ng-repeat="tab in tabs" id="$index" ng-show="isSelected($index)">
+            <div class="tab-content">
+                <div ng-include="tab.url">
+                    this text should not be seen.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

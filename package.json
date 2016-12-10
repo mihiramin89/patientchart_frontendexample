@@ -1,0 +1,41 @@
+{
+    "name": "patientchartexample",
+    "version": "1.0.0",
+    "description": "This is an example of how the front end of a patient chart app would look like.",
+    "main": "index.js",
+    "scripts": {
+        "test": "node app.js",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mihiramin89/patientchart_frontendexample.git"
+    },
+    "keywords": [
+        "patientchart",
+        "front",
+        "end"
+    ],
+    "author": "Mihir Amin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mihiramin89/patientchart_frontendexample/issues"
+    },
+    "homepage": "https://github.com/mihiramin89/patientchart_frontendexample#readme",
+    "devDependencies": {
+        "angular": "^1.6.0",
+        "browser-sync": "^2.18.2",
+        "fusioncharts": "^3.11.3",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.2",
+        "gulp-uglify": "^2.0.0",
+        "gulp-util": "^3.0.7",
+        "path": "^0.12.7"
+    },
+    "dependencies": {
+        "express": "^4.14.0"
+    }
+}

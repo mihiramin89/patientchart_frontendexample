@@ -1,0 +1,172 @@
+// main.scss
+body {
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+input[type='text'] {
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid thin whitesmoke;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: #ddecfb;
+}
+
+.glyphicon-search {
+    font-size: 10px;
+}
+
+.banner {
+    background-color: #1EAFFC;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 2px 2px #888888;
+}
+
+.banner {
+    ul {
+        float: right;
+        display: inline;
+        list-style-type: none;
+    }
+    li {
+        display: inline;
+    }
+}
+
+.toolbar {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    margin-left: 25%;
+    margin-top: 4px;
+}
+
+.page {
+    display: none;
+}
+
+.tab-content {
+    padding: 10px;
+}
+
+.section {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.card {
+    color: black;
+    padding: 5px;
+    box-shadow: 0 0 4px #888888;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.card {
+    h5 {
+        margin: 0;
+        color: dodgerblue;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    div {
+        padding-left: 5px;
+    }
+}
+
+#more {
+    display: none;
+    float: right;
+}
+
+li>a {
+    border: none;
+}
+
+li.active {
+    border-bottom: solid 2px #337ab7;
+}
+
+li.active>a {
+    border: none!important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.sideSection {
+    float: left;
+    padding-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    width: 24%;
+}
+
+.sideSection {
+    .section,
+    {
+        height: 100%;
+        z-index: 2;
+    }
+    .card {
+        bottom: 10px;
+        position: fixed;
+        top: 6%;
+        background-color: white;
+    }
+    h2,
+    h5 {
+        text-align: center;
+    }
+    h2 {
+        color: black;
+        font-style: oblique;
+        margin-bottom: 1px;
+    }
+    h5 {
+        color: #d8d3d3;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        font-size: 10px;
+    }
+    li {
+        color: #25B2FC;
+        display: inline;
+        padding-left: 27px;
+    }
+    li>span {
+        font-size: 10px;
+    }
+    ul.info>li {
+        display: inline-block;
+        padding: 0px;
+        color: #afabab
+    }
+    ul.info {
+        text-align: center;
+    }
+    ul.info>li span {
+        font-size: 14px;
+        color: black;
+    }
+}
+
+#sideMap {
+    height: 260px;
+    width: 260px;
+    margin-top: 10px;
+}

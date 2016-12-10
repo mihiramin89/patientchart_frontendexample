@@ -1,0 +1,10 @@
+<div ng-controller="medicationController as med">
+    <div class="section" ng-repeat="section in content">
+        <div class="card">
+            <h5>{{section.header}}</h5>
+            <div>
+                {{section.data}}
+            </div>
+        </div>
+    </div>
+</div>
